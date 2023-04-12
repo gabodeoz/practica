@@ -1,0 +1,51 @@
+$ git config --global user.name "gabodeoz"
+$ git config --global user.mail "gca.sitios.web@gmail.com"
+
+$ git config --local user.name "gabodeoz"
+$ git config --local user.mail "gca.sitios.web@gmail.com"
+
+
+https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+
+ssh-keygen -t rsa -b 4096 -C "gca.sitios.web@gmail.com"
+
+
+
+
+
+
+$ ssh-add gitkey
+Enter passphrase for gitkey:
+Identity added: gitkey (gca.sitios.web@gmail.com)
+
+
+
+ssh-add -K C:\Users\pc-ho\.ssh\id_rsa
+
+git clone git@github.com:gabodeoz/PracticaConjuntos.git --config core.sshCommand="ssh -i ~/ssh/gitkey"
+
+git clone git@provider.com:userName/projectName.git --config core.sshCommand="ssh -i ~/ssh/private_ssh_key"
+
+git clone git@github.com:gabodeoz/PracticaConjuntos.git --config core.sshCommand="ssh -i ~/.ssh/gitkey"
+
+
+
+
+
+
+
+
+
+
+
+ssh-add ~.ssh\gitkey
+
+
+
+~/documents/projects/test
